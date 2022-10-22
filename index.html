@@ -33,28 +33,66 @@
 </head>
 <body>
     <!-- CALCOLA IL PREZZO DEL TUO BIGLIETTO -->
-    <form class="d-flex text-center" action="" onsubmit="return false">
-        <div class="">
-            <p>Nome Cognome</p>
-            <input type="text" placeholder="Nome Cognome">
+    <section>
+        <h1 class="text-uppercase text-center text-white">calcola il prezzo del tuo biglietto</h1>
+        <div class="container bg-light">
+            <form class="text-center" action="" onsubmit="return false">
+                <div class="d-flex justify-content-center">
+                    <div class="">
+                        <p>Nome Cognome</p>
+                        <input class="text-center" type="text" placeholder="Nome Cognome">
+                    </div>
+                    <div class="ms-5">
+                        <p>Km da percorrere</p>
+                        <input class="text-center" type="number" placeholder="Km da percorrere">
+                    </div> 
+                    <div class="ms-5">
+                        <p>Fascia d'età</p>
+                        <select class="select-age" aria-label="Default select example">
+                            <option selected></option>
+                            <option value="2">Minorenne</option>
+                            <option value="3">Maggiorenne</option>
+                            <option value="3">Over 65</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="mt-5">
+                    <button type="button" class="btn btn-secondary me-4">Genera</button>
+                    <button type="button" class="btn btn-secondary">Annulla</button>
+                </div>
+            </form>
         </div>
-        <div class="ms-5">
-            <p>Km da percorrere</p>
-            <input type="text" placeholder="Km da percorrere">
-        </div> 
-        <div class="ms-5">
-            <p>Fascia d'età</p>
-            <select class="" aria-label="Default select example">
-                <option selected></option>
-                <option value="2">Minorenne</option>
-                <option value="3">Maggiorenne</option>
-                <option value="3">Over 65</option>
-            </select>
-        </div>
-    </form>
+    </section>
 
     <!-- IL TUO BIGLIETTO -->
-
+    <section>
+        <h1 class="text-uppercase text-center text-white">il tuo biglietto</h1>
+        <div class="container bg-light">
+            <h4 class="text-uppercase">dettaglio passeggeri</h4>
+            <div class="row d-flex m-auto">
+                <div class="col-3 py-3 px-4 nome-passeggero">
+                    <h4 class="text-uppercase fw-bold">nome passeggero</h4>
+                    <h5 class="fw-bold">John Snow</h5>
+                </div>
+                <div class="col py-3 px-4">
+                    <p class="fw-bold">Offerta</p>
+                    <p>Biglietto Standard</p>
+                </div>
+                <div class="col py-3 px-4">
+                    <p class="fw-bold">Carrozza</p>
+                    <p>5</p>
+                </div>
+                <div class="col py-3 px-4">
+                    <p class="fw-bold">Codice CP</p>
+                    <p>92911</p>
+                </div>
+                <div class="col py-3 px-4">
+                    <p class="fw-bold">Costo Biglietto</p>
+                    <p class="ticket-total"></p>
+                </div>
+            </div>
+        </div>
+    </section>
 
 </body>
 </html>
