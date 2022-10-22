@@ -31,14 +31,20 @@ function calc(){
     let kilometres = document.querySelector('.chilometri').value;
     let age = document.querySelector('.anni').value;
     let priceTotal = document.querySelector('.result').value;
-    let section2 = document.querySelector('.ticket');
+    let eleOpen = document.querySelector('.ticket');
     let generator = document.querySelector('.genera');
+    let eleClose = document.querySelector('.chiudi');
+
 
     generator.addEventListener('click', function () {
-        section2.classList.add('open');
+        eleOpen.classList.add('open');
     });
 
-    section2.classList.add('open');
+   eleClose.addEventListener('click', function () {
+        eleOpen.classList.remove('open');
+    });
+
+    
 
     if(age === 'Minorenne'){
         document.querySelector('.result').value = Math.round((0.21 * kilometres) * 0.20 * 100) / 100;
