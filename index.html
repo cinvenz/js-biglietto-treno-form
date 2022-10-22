@@ -44,20 +44,20 @@
                     </div>
                     <div class="ms-5">
                         <p>Km da percorrere</p>
-                        <input class="text-center" type="number" placeholder="Km da percorrere">
+                        <input class="text-center chilometri" type="number" placeholder="Km da percorrere">
                     </div> 
                     <div class="ms-5">
                         <p>Fascia d'età</p>
-                        <select class="select-age" aria-label="Default select example">
+                        <select class="select-age anni" aria-label="Default select example">
                             <option selected></option>
-                            <option value="2">Minorenne</option>
-                            <option value="3">Maggiorenne</option>
-                            <option value="3">Over 65</option>
+                            <option value="Minorenne">Minorenne</option>
+                            <option value="Maggiorenne">Maggiorenne</option>
+                            <option value="Over65">Over 65</option>
                         </select>
                     </div>
                 </div>
                 <div class="mt-5">
-                    <button type="button" class="btn btn-secondary me-4">Genera</button>
+                    <button onclick="calc();" type="button" class="btn btn-secondary me-4ss">Genera</button>
                     <button type="button" class="btn btn-secondary">Annulla</button>
                 </div>
             </form>
@@ -88,7 +88,7 @@
                 </div>
                 <div class="col py-3 px-4">
                     <p class="fw-bold">Costo Biglietto</p>
-                    <p class="ticket-total"></p>
+                    <input class="result" type="text">
                 </div>
             </div>
         </div>

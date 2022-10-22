@@ -26,3 +26,22 @@
 //     console.log('Il prezzo totale è:' , priceTotal + '€');
 // }
 
+function calc(){
+ 
+    let kilometres = document.querySelector('.chilometri').value;
+    let age = document.querySelector('.anni').value;
+    let priceTotal = document.querySelector('.result').value;
+
+
+    if(age === 'Minorenne'){
+        document.querySelector('.result').value = Math.round((0.21 * kilometres) * 0.20 * 100) / 100;
+    }
+
+    else if(age ==='Over65'){
+        document.querySelector('.result').value = Math.round((0.21 * kilometres) * 0.40 * 100) / 100;
+    }
+
+    else {
+        document.querySelector('.result').value = Math.round((0.21 * kilometres) * 100) / 100;
+    }
+}
