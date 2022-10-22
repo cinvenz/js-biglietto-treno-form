@@ -9,3 +9,11 @@ body {
 .nome-passeggero {
     background-color: #808080;
 }
+
+.ticket {
+    display: none;
+}
+
+.open {
+    display: block;
+}
