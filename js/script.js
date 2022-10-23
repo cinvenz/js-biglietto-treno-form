@@ -23,9 +23,7 @@ function calc(){
     if(age === 'Minorenne'){
         document.querySelector('.result').value = Math.round((0.21 * kilometres) * 0.20 * 100) / 100;
         console.log('Il prezzo totale è:' , document.querySelector('.result').value + '€');
-    }
-
-    else if(age ==='Over65'){
+    }  else if(age ==='Over65'){
         document.querySelector('.result').value = Math.round((0.21 * kilometres) * 0.40 * 100) / 100;
         console.log('Il prezzo totale è:' , document.querySelector('.result').value + '€');
     }
