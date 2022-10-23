@@ -1,5 +1,21 @@
 body {
-    background-color: #B91450;
+    /* background-color: #B91450; */
+    background-image: url(../img/Trenitalia.jpg);
+    background-size: cover;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+    text-shadow:  2px 0 black, -2px 0 black, 0 2px black, 0 -2px black,
+    1px 1px black, -1px -1px black, 1px -1px black, -1px 1px black;;
+}
+
+.dati p {
+    color: #B91450;
+}
+
+.dati input {
+    border: 1px solid #B91450;
 }
 
 .select-age {
@@ -16,4 +32,27 @@ body {
 
 .open {
     display: block;
+}
+
+.btn {
+    color: #B91450;
+    background-color: #CCCCCC;
+}
+
+.btn:hover {
+    color: #B91450;
+    background-color: #CCCCCC;
+}
+
+.btnborder {
+    border: 2px solid #E08F47;
+}
+
+.ticket input {
+    all: unset;
+}
+
+.row {
+    border-top: 1px solid #808080;
+    border-bottom: 1px solid #808080;
 }

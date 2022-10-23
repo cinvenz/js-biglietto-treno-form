@@ -33,22 +33,22 @@
 </head>
 <body>
     <!-- CALCOLA IL PREZZO DEL TUO BIGLIETTO -->
-    <section>
+    <section class="mb-3">
         <h1 class="text-uppercase text-center text-white">calcola il prezzo del tuo biglietto</h1>
-        <div class="container bg-light">
-            <form class="text-center" action="" onsubmit="return false">
+        <div class="container bg-light dati rounded-3">
+            <form class="text-center pt-4 pb-4" action="" onsubmit="return false">
                 <div class="d-flex justify-content-center">
                     <div class="">
-                        <p>Nome Cognome</p>
-                        <input class="text-center" type="text" placeholder="Nome Cognome">
+                        <p class="fw-bold">Nome Cognome</p>
+                        <input class="text-center rounded fw " type="text" placeholder="Nome Cognome">
                     </div>
                     <div class="ms-5">
-                        <p>Km da percorrere</p>
-                        <input class="text-center chilometri" type="number" placeholder="Km da percorrere">
+                        <p class="fw-bold">Km da percorrere</p>
+                        <input class="text-center chilometri rounded " type="number" placeholder="Km da percorrere">
                     </div> 
                     <div class="ms-5">
-                        <p>Fascia d'età</p>
-                        <select class="select-age anni" aria-label="Default select example">
+                        <p class="fw-bold">Fascia d'età</p>
+                        <select class="select-age anni rounded " aria-label="Default select example">
                             <option selected></option>
                             <option value="Minorenne">Minorenne</option>
                             <option value="Maggiorenne">Maggiorenne</option>
@@ -57,8 +57,8 @@
                     </div>
                 </div>
                 <div class="mt-5">
-                    <button onclick="calc();" type="button" class="btn btn-secondary me-4ss genera">Genera</button>
-                    <button type="button" class="btn btn-secondary chiudi">Annulla</button>
+                    <button onclick="calc();" type="button" class="btn btn-secondary me-4ss genera fw-bold">Genera</button>
+                    <button type="button" class="btn btn-secondary chiudi fw-bold">Annulla</button>
                 </div>
             </form>
         </div>
@@ -67,10 +67,10 @@
     <!-- IL TUO BIGLIETTO -->
     <section class="ticket">
         <h1 class="text-uppercase text-center text-white">il tuo biglietto</h1>
-        <div class="container bg-light">
+        <div class="container bg-light pt-4 pb-4 ps-4 pe-4">
             <h4 class="text-uppercase">dettaglio passeggeri</h4>
-            <div class="row d-flex m-auto">
-                <div class="col-3 py-3 px-4 nome-passeggero">
+            <div class="row m-auto">
+                <div class="col-4 py-3 px-4 nome-passeggero">
                     <h4 class="text-uppercase fw-bold">nome passeggero</h4>
                     <h5 class="fw-bold">John Snow</h5>
                 </div>
